@@ -57,3 +57,5 @@ Add unit tests
 
 I'm less concerned with visual layout / css/ javascript wizardry, 1997 web design palette is fine.  I'm looking for well
 written python code and idiomatic use of Django.
+
+Hints on how to run the app with your additions are appreciated.  Add them to this doc!
