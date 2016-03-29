@@ -1,6 +1,6 @@
 ###Overview
 
-This is simple skeleton of a Django web app.  The subject matter is a simple Music Lover's CMS to track albums and
+This is simple skeleton of a Django web app.  The subject matter is a Music Lover's CMS to track albums and
 the songs on those albums.  It is runnable in it's current state. Your goal is to fill out the functionality.
   
 First fork this github repo in your github account, then do all development in your fork.  When you are ready to submit
