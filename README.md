@@ -8,6 +8,8 @@ your work, issue a github pull request to the upstream master.
 
 ###Operating the App
 
+First install Django!  then...
+
 #####Start server
 
 `python manage.py runserver`
