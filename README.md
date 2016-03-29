@@ -1,10 +1,28 @@
+Overview
+
+This is the runnable skeleton of a Django web app.  The subject matter is a simple Music Lover's CMS to track albums and
+the songs on those albums.  It is runnable in it's current state. Your goal is to fill out the functionality.
+  
+First fork this github repo in your github account, then do all development in your fork.  When you are ready to submit
+your work, issue a github pull request to the upstream master.
+
+Operating the App
+
+Start server:
+python manage.py runserver
+
+Add a few albums:
+http://127.0.0.1:8000/admin/
+
+See a list of all albums:
+http://127.0.0.1:8000/albums/
 
 Admin username: admin
 Admin password: funinthesun
 
 Task 1:
 
-Add a Song model object, the cardinality should be "Many Songs to One Album".
+Add a Song model object, and associate it to the Album object, the cardinality should be *Many Songs to One Album*.
 
 Song has a few fields:
 
@@ -14,6 +32,16 @@ Song has a few fields:
 
 Task 2:
 
-Add a Json response.  when uri=  /album/xyz and content-type:application:json
+Add a view for /album/xyz that displays the album's meta data as well as all of the associated songs from the model you
+added in Task 1. The first view that is already implemented: /albums/ has the view generation embedded in python code. 
+Be smarter in your new songs view and introduce a templating system.
 
-returns the album details and all the songs in Json format.
+Task 3:
+
+Add a similar view as added in Task 2, but make this one return a json response. Use the same uri as Task 2: /album/xyz
+Explore the concept of content negotiation.   This json response should contain both the album details as well as all
+of the associated songs in Json format.
+
+Bonus Points:
+
+Add unit tests
